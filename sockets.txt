@@ -1,0 +1,5 @@
+Sockets are low level connection end-points. 
+HTTP, FTP sit on top of Sockets
+You can create any web service/app using sockets.
+
+There is no client socket or server socket.
