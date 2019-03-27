@@ -7,5 +7,12 @@ There is no client socket or server socket.
 Use descriptor = socket() to create a socket. 
 Use TYPE of socket, PROTOCOL, etc.
 
+Client 
+======
 socket() -> connect() -> recv()
 
+server
+======
+socket() -> bind() -> listen() -> accept() -> send()
+
+struct sockaddr_in -> Used to connect/bind to a port and address.  

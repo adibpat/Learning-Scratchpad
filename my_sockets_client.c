@@ -20,7 +20,7 @@ int main ()
     // actual address of the peer
     server_address.sin_addr.s_addr = INADDR_ANY; // connects to local host
 
-    if (connect(network_socket, (struct sockaddr *) server_address, sizeof(server_address)) < 0 ) {
+    if (connect(network_socket, (struct sockaddr *) &server_address, sizeof(server_address)) < 0 ) {
         printf("Connection to server failed\n");
     }
 
